@@ -1,6 +1,6 @@
-<img style="margin-right: 200px;float:right;" src="https://img.shields.io/badge/development%20status-active-brightgreen.svg"  align="right">
-# EAL Appointment Scheduling App
 
+# EAL Appointment Scheduling App
+<img style="margin-right: 200px;float:right;" src="https://img.shields.io/badge/development%20status-active-brightgreen.svg"  align="right">
 <img style="margin-right: 200px;float:right;" src="https://octodex.github.com/images/daftpunktocat-thomas.gif" width="130" align="right">
 
 ## Features
