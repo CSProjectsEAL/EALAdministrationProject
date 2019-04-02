@@ -30,7 +30,7 @@ If the application doesn't load try restarting docker and try again. Still not s
 ## Application functionality
 
 ## Contributors Thanks
-This project was developed by Pba. students at EAL Software development course.
+This project was developed by Pba. students at EAL Software Development course, related to system integration and project management. And is grounded in a real world problem and organisation.
 
 - Kristina Ochmirova <a href="https://github.com/KristinaEALCS">@KristinaEALCS</a>
 - Marius Šibajevas <a href="https://github.com/mari7v71">@mari7v71</a>
