@@ -1,7 +1,7 @@
 
 # EAL Appointment Scheduling App
 
-<img style="margin-right: 200px;float:right;" src="https://octodex.github.com/images/daftpunktocat-thomas.gif" width="230">
+<img style="margin-right: 200px;float:right;" src="https://octodex.github.com/images/daftpunktocat-thomas.gif" width="130" align="right">
 
 
 ## Features
