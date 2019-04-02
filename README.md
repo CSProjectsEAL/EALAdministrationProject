@@ -14,12 +14,15 @@
 - 
 
 ## How to run
-1. Clone the project using the  following command **or** download the repository zip file
+1. Clone the project using the  following command **or** download the repository zip file <br>
 `git clone https://github.com/CSProjectsEAL/EALAdministrationsProject.git`
+
 1. Using a shell navigate to the folder where the repository is located
-1. Run the following command
+
+1. Run the following command <br>
 `docker-compose up --build`
-1. Go to the following address in your browser
+
+1. Go to the following address in your browser <br>
 `http://localhost:****`
 
 If the application doesn't load try restarting docker and try again. Still not showing? Submit an issue ⬆️👍🏻
