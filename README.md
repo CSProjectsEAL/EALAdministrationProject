@@ -1,6 +1,6 @@
 <img style="margin-right: 200px;float:right;" src="https://img.shields.io/badge/development%20status-active-brightgreen.svg"><div></div>
 # EAL Appointment Scheduling App
-
+A system build to automate administrative tasks related to setting up meeting between international applicants at a university and the people interviewing them.
 <img style="margin-right: 200px;float:right;" src="https://octodex.github.com/images/daftpunktocat-thomas.gif" width="130" align="right">
 
 ## Features
