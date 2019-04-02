@@ -35,5 +35,5 @@ This project was developed by Pba. students at EAL Software Development course, 
 - Kristina Ochmirova <a href="https://github.com/KristinaEALCS">@KristinaEALCS</a>
 - Marius Šibajevas <a href="https://github.com/mari7v71">@mari7v71</a>
 - Alexander Hvidt <a href="https://github.com/alex855k">@alex855k</a>
-- André Steenhoff Madsen <a href="https://github.com/andr9528">@mari7v71</a>
+- André Steenhoff Madsen <a href="https://github.com/andr9528">@andr9528</a>
 - Gunnar Geir Helgason <a href="https://github.com/Gunnar1989">@Gunnar1989</a> 
