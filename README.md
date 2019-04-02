@@ -27,8 +27,6 @@ A system build to automate administrative tasks related to setting up meeting be
 
 If the application doesn't load try restarting docker and try again. Still not showing? Submit an issue ⬆️👍🏻
 
-## Application functionality
-
 ## Contributors Thanks
 This project was developed by Pba. students at EAL Software Development course, related to system integration and project management. And is grounded in a real world problem and organisation.
 
