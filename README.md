@@ -1,14 +1,14 @@
+
+# EAL Appointment Scheduling App
+
 <img style="margin-right: 200px;float:right;" src="https://octodex.github.com/images/daftpunktocat-thomas.gif" width="230">
-
-
 
 
 ## Features
 - Importing applicants from CSV files.
-- 
 
 ## Development status
-
+Active
 ## Requirements
 * Docker ✅
 * Microsoft Windows (w/ HyperV enabled) ✅
@@ -32,9 +32,9 @@ If the application doesn't load try restarting docker and try again. Still not s
 ## Contributors Thanks
 This project was developed by the Pba. students at EAL Software development course.
 
-A special thanks to
+A special thanks to:
 
 - Kristina 
 - Marius
 - Alexander
-- 
+- Andre
