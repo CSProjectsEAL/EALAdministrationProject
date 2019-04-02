@@ -6,9 +6,9 @@ A system build to automate administrative tasks related to setting up meeting be
 ## Features
 - Importing applicants from CSV files.
 
-## Requirements
-* Docker ✅
-* Microsoft Windows (w/ HyperV enabled) ✅
+## Developer requirements
+* Docker 
+* Microsoft Windows (w/ HyperV enabled)
 
 ## Dependencies & Packages
 - 
