@@ -21,7 +21,7 @@ about: Functionality request expressed from the perspective of the user
 ## Acceptance Criteria
 (Write your criteria here:)
 #### Flow
-- [ ]
+- [ ] E.g. Check that this condition has been met.
 
 ## Extra info
 (Optional: Include screenshots, mockups or other relevant information)
