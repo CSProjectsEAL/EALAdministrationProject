@@ -1,7 +1,7 @@
 <img style="margin-right: 200px;float:right;" src="https://img.shields.io/badge/development%20status-active-brightgreen.svg"><div></div>
-# EAL Appointment Scheduling App
-A system build to automate administrative tasks related to setting up meeting between international applicants at a university and the people interviewing them.
-<img style="margin-right: 200px;float:right;" src="https://octodex.github.com/images/daftpunktocat-thomas.gif" width="130" align="right">
+# EAL Appointment Scheduling - Web App
+
+<img style="margin-right: 200px;float:right;" src="https://octodex.github.com/images/dinotocat.pngf" width="130" align="right">
 
 ## Features
 - Importing applicants from CSV files.
@@ -13,15 +13,13 @@ A system build to automate administrative tasks related to setting up meeting be
 ## Dependencies & Packages
 - 
 
-## How to run
-1. Clone the project using the  following command **or** download the repository zip file <br>
+## How to start developing
+1. Clone repository <br>
 `git clone https://github.com/CSProjectsEAL/EALAdministrationsProject.git`
-
-1. Using a shell navigate to the folder where the repository is located
-
+1. Checkout and track WebApp branch <br>
+`git checkout --track WebApp`
 1. Run the following command <br>
-`docker-compose up --build`
-
+`docker-compose up --build --force-recreate`
 1. Go to the following address in your browser <br>
 `http://localhost:****`
 
