@@ -2,6 +2,9 @@
 
 namespace Domain.Concrete
 {
+    /// <summary>
+    /// Requires a Interviewer, Applicant and Appointment to be assigned before being accepted by the database.
+    /// </summary>
     public class Interview : IInterview
     {
         public IInterviewer Interviewer { get; set; }

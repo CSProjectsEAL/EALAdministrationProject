@@ -7,9 +7,9 @@ namespace Repository.EntityFramework
 {
     public class SerializableEntityRepositoryHandler : BaseEntityRepositoryHandler, ISerializableRepository
     {
-        public SerializableEntityRepositoryHandler(bool useLazyLoading = true) : base(useLazyLoading)
+        public SerializableEntityRepositoryHandler(EntityRepository repository) : base(repository)
         {
-            
+
         }
 
         // Below an Example of implmenting one domain this way is shown.

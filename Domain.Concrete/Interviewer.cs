@@ -15,5 +15,12 @@ namespace Domain.Concrete
         public Clearance AccessLevel { get; set; }
         public int Id { get; set; }
         public byte[] Version { get; set; }
+
+        public Interviewer()
+        {
+            ApplicantsToInterview = new List<IApplicant>();
+            AvailableTimes = new List<IAvailableTime>();
+            Interviews = new List<IInterview>();
+        }
     }
 }

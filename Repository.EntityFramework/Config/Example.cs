@@ -13,7 +13,7 @@ namespace Repository.EntityFramework.Config
 
     // e.g
     /*
-    public class YourDomainClassConfig : IEntityTypeConfiguration<YourDomainClass>
+    internal class YourDomainClassConfig : IEntityTypeConfiguration<YourDomainClass>
     {
         public YourDomainClassConfig()
         {

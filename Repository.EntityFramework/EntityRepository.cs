@@ -1,14 +1,20 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
+using Domain.Concrete;
+using Repository.EntityFramework.Config;
 
 namespace Repository.EntityFramework
 {
-    class EntityRepository : DbContext
+    public class EntityRepository : DbContext
     {
-        private bool useLazyLoading;
-        public EntityRepository(bool useLazyLoading = true)
+        private readonly DbContextOptions<EntityRepository> options;
+        private readonly bool useLazyLoading;
+        public EntityRepository(DbContextOptions<EntityRepository> options) : base(options)
         {
-            this.useLazyLoading = useLazyLoading;
+            this.options = options;
+            useLazyLoading = true;
+
+            //Database.Migrate();
         }
 
         // Underneath create as many DbSet' as you have domain classes you wish to persist.
@@ -16,7 +22,12 @@ namespace Repository.EntityFramework
 
         // e.g
         // public virtual DbSet<YourDomainClass> YourDomainClassInPlural { get; set; }
-
+        public virtual DbSet<Administrator> Administrators { get; set; }
+        public virtual DbSet<Applicant> Applicants { get; set; }
+        public virtual DbSet<Appointment> Appointments { get; set; }
+        public virtual DbSet<AvailableTime> AvailableTimes { get; set; }
+        public virtual DbSet<Interview> Interviews { get; set; }
+        public virtual DbSet<Interviewer> Interviewers { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -33,6 +44,13 @@ namespace Repository.EntityFramework
 
             // e.g
             // modelBuilder.ApplyConfiguration(new YourDomainClassConfig());
+
+            modelBuilder.ApplyConfiguration(new AdministratorConfig());
+            modelBuilder.ApplyConfiguration(new ApplicantConfig());
+            modelBuilder.ApplyConfiguration(new AppointmentConfig());
+            modelBuilder.ApplyConfiguration(new AvailableTimeConfig());
+            modelBuilder.ApplyConfiguration(new InterviewConfig());
+            modelBuilder.ApplyConfiguration(new InterviewerConfig());
         }
     }
 }
