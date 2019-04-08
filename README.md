@@ -4,24 +4,25 @@
 <img style="margin-right: 200px;float:right;" src="https://octodex.github.com/images/dinotocat.pngf" width="130" align="right">
 
 ## Features
-- Importing applicants from CSV files.
+- None yet! :@)
 
 ## Developer requirements
-* Docker 
-* Microsoft Windows (w/ HyperV enabled)
+- Node installed https://nodejs.org/en/download/
+- Vue cli https://cli.vuejs.org/guide/installation.html
+- Install Vue prototyping 
 
 ## Dependencies & Packages
-- 
-
+- SQL Server needs to be running to run production in production environment mode
+https://cli.vuejs.org/guide/plugins-and-presets.html#allowing-plugin-prompts
 ## How to start developing
 1. Clone repository <br>
 `git clone https://github.com/CSProjectsEAL/EALAdministrationsProject.git`
 1. Checkout and track WebApp branch <br>
 `git checkout --track WebApp`
 1. Run the following command <br>
-`docker-compose up --build --force-recreate`
+``
 1. Go to the following address in your browser <br>
-`http://localhost:****`
+`http://localhost:5001`
 
 If the application doesn't load try restarting docker and try again. Still not showing? Submit an issue ⬆️👍🏻
 
