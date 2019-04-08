@@ -14,18 +14,30 @@ A system build to automate administrative tasks related to setting up meeting be
 - 
 
 ## How to run
+
+#### Clone the project
 1. Clone the project using the  following command **or** download the repository zip file <br>
 `git clone https://github.com/CSProjectsEAL/EALAdministrationsProject.git`
 
 1. Using a shell navigate to the folder where the repository is located
 
 1. Run the following command <br>
-`docker-compose up --build`
+`exmaple`
 
 1. Go to the following address in your browser <br>
 `http://localhost:****`
 
-If the application doesn't load try restarting docker and try again. Still not showing? Submit an issue ⬆️👍🏻
+#### Run API gateway
+
+#### Then run the Web Api
+
+1. [Instructions on how to run vue web app](/CSProjectsEAL/EALAdministrationsProject/tree/WebApp/webapp) <br>
+``
+
+1. Go to the following address in your browser <br>
+`http://localhost:****`
+
+If the application doesn't load submit an issue. 😅👍🏻
 
 ## Contributors Thanks
 This project was developed by Pba. students at EAL Software Development course, related to system integration and project management. And is grounded in a real world problem and organisation.
