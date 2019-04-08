@@ -4,31 +4,40 @@ using Repository.EntityFramework;
 using System;
 using System.IO;
 
-namespace Startup.Base
+namespace Base.Startup
 {
     public abstract class StartupBase : IStartupEF
     {
         private IStartupEF _startupEf = null;
 
-        public StartupBase(string connectionStringName = "")
+        public StartupBase(IConfiguration config = null, string connectionStringName = "")
         {
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
-            
+            if (config == null)
+            {
+                var builder = new ConfigurationBuilder()
+                        .SetBasePath(Directory.GetCurrentDirectory())
+                        .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+
+                Configuration = builder.Build(); 
+            }
+            else
+                Configuration = config;
+
             if (connectionStringName != "")
             {
-                _startupEf = new StartupEf(Configuration, connectionStringName); 
+                _startupEf = new StartupEf(Configuration, connectionStringName);
             }
         }
 
         public IConfiguration Configuration { get; protected set; }
 
-        public void ConfigureServices(IServiceCollection services)
+        public void SetupServices(IServiceCollection services)
         {
+            Console.WriteLine("Setting up Services...");
+
             if (_startupEf != null)
             {
-                _startupEf.ConfigureServices(services); 
+                _startupEf.SetupServices(services);
             }
         }
     }

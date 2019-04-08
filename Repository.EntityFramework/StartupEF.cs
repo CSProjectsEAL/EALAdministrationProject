@@ -20,17 +20,19 @@ namespace Repository.EntityFramework
         public IConfiguration Configuration { get; }
         private string ConnectionStringName { get; }
 
-        public void ConfigureServices(IServiceCollection services)
+        public void SetupServices(IServiceCollection services)
         {
             services.AddDbContext<EntityRepository>(option => option.UseSqlServer(Configuration.GetConnectionString(ConnectionStringName)));
 
             services.AddTransient(typeof(IGenericRepository), typeof(GenericEntityRepositoryHandler));
             services.AddTransient(typeof(ISerializableRepository), typeof(SerializableEntityRepositoryHandler));
+
+            Console.WriteLine("Finished Configuring Services for Entity Framework...");
         }
     }
 
     public interface IStartupEF
     {
-        void ConfigureServices(IServiceCollection services);
+        void SetupServices(IServiceCollection services);
     }
 }
