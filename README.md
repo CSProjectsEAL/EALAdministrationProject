@@ -27,13 +27,13 @@ A system build to automate administrative tasks related to setting up meeting be
 1. Go to the following address in your browser <br>
 `http://localhost:****`
 
-#### Run API gateway
+#### Run API Gateway
+1.
 
 #### Then run the Web Api
 
 1. [Instructions on how to run vue web app](/CSProjectsEAL/EALAdministrationsProject/tree/WebApp/webapp) <br>
 ``
-
 1. Go to the following address in your browser <br>
 `http://localhost:****`
 
