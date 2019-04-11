@@ -83,9 +83,9 @@
         <router-link
           v-ripple
           class="toolbar-items"
-          to="/user-profile"
+          to="/settings"
         >
-          <v-icon color="tertiary">mdi-account</v-icon>
+          <v-icon color="tertiary">mdi-</v-icon>
         </router-link>
       </v-flex>
     </v-toolbar-items>
@@ -100,6 +100,7 @@ import {
 
 export default {
   data: () => ({
+    // Load notifications
     notifications: [
       'Mike, John responded to your email',
       'You have 5 new tasks',
