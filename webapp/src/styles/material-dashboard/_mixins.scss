@@ -42,7 +42,7 @@
 
 @mixin drawer-active-colors($color-name, $color) {
   .v-navigation-drawer .v-list .v-list-item .v-list__tile.v-list__tile--active.#{$color-name} {
-    background-color: $color !important;
+    background-color: $orange-400 !important;
     @include shadow-big-color($color);
   }
 }
