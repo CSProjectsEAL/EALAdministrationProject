@@ -9,10 +9,6 @@
     mobile-break-point="991"
     width="260"
   >
-    <v-img
-      :src="image"
-      height="100%"
-    >
       <v-layout
         class="fill-height"
         tag="v-list"
@@ -20,16 +16,16 @@
       >
         <v-list-tile avatar>
           <v-list-tile-avatar
-            color="white"
+            color="grey"
           >
             <v-img
-              :src="logo"
-              height="34"
+              :src="profile_pic"
+              height="54"
               contain
             />
           </v-list-tile-avatar>
           <v-list-tile-title class="title">
-            Vuetify MD
+            Henrik
           </v-list-tile-title>
         </v-list-tile>
         <v-divider/>
@@ -57,24 +53,11 @@
             v-text="link.text"
           />
         </v-list-tile>
-        <v-list-tile
-          disabled
-          active-class="primary"
-          class="v-list-item v-list__tile--buy"
-          to="/upgrade"
-        >
-          <v-list-tile-action>
-            <v-icon>mdi-package-up</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-title class="font-weight-light">
-            Upgrade To PRO
-          </v-list-tile-title>
         </v-list-tile>
       </v-layout>
-    </v-img>
+   
   </v-navigation-drawer>
 </template>
-
 <script>
 // Utilities
 import {
@@ -84,43 +67,38 @@ import {
 
 export default {
   data: () => ({
-    logo: './img/vuetifylogo.png',
+    logo: './img/logo-horisontal.png',
     links: [
       {
-        to: '/dashboard',
-        icon: 'mdi-view-dashboard',
-        text: 'Dashboard'
+        to: '/Home',
+        icon: 'mdi-home',
+        text: 'Home'
       },
       {
-        to: '/user-profile',
-        icon: 'mdi-account',
-        text: 'User Profile'
-      },
-      {
-        to: '/table-list',
-        icon: 'mdi-clipboard-outline',
-        text: 'Table List'
-      },
-      {
-        to: '/typography',
-        icon: 'mdi-format-font',
-        text: 'Typography'
-      },
-      {
-        to: '/icons',
-        icon: 'mdi-chart-bubble',
-        text: 'Icons'
-      },
-      {
-        to: '/maps',
-        icon: 'mdi-map-marker',
-        text: 'Maps'
+        to: '/applicants',
+        icon: 'mdi-account-group',
+        text: 'Applicants'
       },
       {
         to: '/notifications',
         icon: 'mdi-bell',
         text: 'Notifications'
-      }
+      },
+      {
+        to: '/calendar',
+        icon: 'mdi-calendar',
+        text: 'Calendar'
+      },
+      {
+        to: '/availability',
+        icon: 'mdi-update',
+        text: 'Availability'
+      },
+      {
+        to: '/settings',
+        icon: 'mdi-settings',
+        text: 'Settings'
+      },
     ],
     responsive: false
   }),
@@ -160,18 +138,14 @@ export default {
 
 <style lang="scss">
   #app-drawer {
+    background: linear-gradient(180deg, #F9445A, #FE783E);
     .v-list__tile {
-      border-radius: 4px;
+      border-radius: 7px;
 
       &--buy {
         margin-top: auto;
         margin-bottom: 17px;
       }
-    }
-
-    .v-image__image--contain {
-      top: 9px;
-      height: 60%;
     }
 
     .search-input {
