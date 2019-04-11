@@ -138,7 +138,7 @@ export default {
 
 <style lang="scss">
   #app-drawer {
-    background: linear-gradient(180deg, #F9445A, #FE783E);
+    background: linear-gradient(180deg, #ff1633, #ffe87a);
     .v-list__tile {
       border-radius: 7px;
 
