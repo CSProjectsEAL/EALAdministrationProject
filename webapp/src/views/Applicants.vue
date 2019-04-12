@@ -12,14 +12,23 @@
         md12
       >
         <material-card
-          color="green"
-          title="Simple Table"
-          text="Here is a subtitle for this table"
+          color="#531B21"
+          title="Assigned applicants"
         >
+        <v-flex md12>
+            <v-text-field
+              v-model="search"
+              append-icon="mdi-magnify"
+              label="Search"
+              single-line
+              hide-details
+            ></v-text-field>
+        </v-flex>
           <v-data-table
             :headers="headers"
             :items="items"
-            hide-actions
+            :pagination.sync="pagSettings"
+            :search="search"
           >
             <template
               slot="headerCell"
@@ -36,44 +45,14 @@
             >
               <td>{{ item.name }}</td>
               <td>{{ item.country }}</td>
-              <td>{{ item.city }}</td>
-              <td class="text-xs-right">{{ item.salary }}</td>
-            </template>
-          </v-data-table>
-        </material-card>
-      </v-flex>
-      <v-flex
-        md12
-      >
-        <material-card
-          color="green"
-          flat
-          full-width
-          title="Table on Plain Background"
-          text="Here is a subtitle for this table"
-        >
-          <v-data-table
-            :headers="headers"
-            :items="items.slice(0, 7)"
-            hide-actions
-          >
-            <template
-              slot="headerCell"
-              slot-scope="{ header }"
-            >
-              <span
-                class="subheading font-weight-light text--darken-3"
-                v-text="header.text"
-              />
-            </template>
-            <template
-              slot="items"
-              slot-scope="{ item }"
-            >
-              <td>{{ item.name }}</td>
-              <td>{{ item.country }}</td>
-              <td>{{ item.city }}</td>
-              <td class="text-xs-right">{{ item.salary }}</td>
+              <td>{{ new Date(item.appliedDate * 1000) | moment("MM/D/YY") }}</td>
+              <td>{{ new Date(item.interviewDate * 1000) | moment("dd MM/D/YY") }}</td>
+              <td align="center"><v-icon
+        color="primary"
+        size="22">mdi-arrow-down-bold-circle</v-icon><v-icon
+        color="blue"
+        size="22">mdi-arrow-up-bold-circle</v-icon></td>
+              <td>{{ item.attempts }}</td>
             </template>
           </v-data-table>
         </material-card>
@@ -85,63 +64,103 @@
 <script>
 export default {
   data: () => ({
+    pagSettings:[
+      {
+         descending: false,
+          page: 2,
+          rowsPerPage: 1,
+          sortBy: status,
+      },
+    ],
+    search: '',
     headers: [
       {
-        sortable: false,
+        sortable: true,
         text: 'Name',
         value: 'name'
       },
       {
-        sortable: false,
+        sortable: true,
         text: 'Country',
         value: 'country'
       },
       {
-        sortable: false,
-        text: 'City',
-        value: 'city'
+        sortable: true,
+        text: 'Applied',
+        value: 'appliedDate',
       },
-      {
+       {
         sortable: false,
-        text: 'Salary',
-        value: 'salary',
-        align: 'right'
-      }
+        text: 'Interview Date',
+        value: 'interviewDate'
+      },
+       {
+        sortable: false,
+        text: 'Interview Notes',
+        align: 'center',
+        value: 'interviewNotes',
+      },
+       {
+        sortable: true,
+        text: 'Attempts',
+        value: 'attempts'
+      },
     ],
     items: [
       {
         name: 'Dakota Rice',
         country: 'Niger',
-        city: 'Oud-Tunrhout',
-        salary: '$35,738'
+        appliedDate: '1555016764',
+        interviewDate: '1555016764',
+        interviewNotes: 'down',
+        attempts: 1
       },
       {
-        name: 'Minerva Hooper',
-        country: 'Curaçao',
-        city: 'Sinaai-Waas',
-        salary: '$23,738'
-      }, {
+        name: 'Dakota Rice',
+        country: 'Niger',
+        appliedDate: '1555016764',
+        interviewDate: '1555016764',
+        interviewNotes: 'down',
+        attempts: 2
+      }, 
+      {
         name: 'Sage Rodriguez',
         country: 'Netherlands',
-        city: 'Overland Park',
-        salary: '$56,142'
-      }, {
+        appliedDate: '1555017095',
+        interviewDate: '1555016764',
+        interviewNotes: 'down',
+        attempts: 3
+      }, 
+      {
         name: 'Philip Chanley',
         country: 'Korea, South',
-        city: 'Gloucester',
-        salary: '$38,735'
-      }, {
+        appliedDate: '1555016764',
+        interviewDate: '1555016764',
+        interviewNotes: 'down',
+        attempts: 1
+      }, 
+      {
         name: 'Doris Greene',
         country: 'Malawi',
-        city: 'Feldkirchen in Kārnten',
-        salary: '$63,542'
-      }, {
+        appliedDate: '1555016764',
+        interviewDate: '1555016764',
+        interviewNotes: 'down',
+        attempts: 2
+      }, 
+      {
         name: 'Mason Porter',
         country: 'Chile',
-        city: 'Gloucester',
-        salary: '$78,615'
+        appliedDate: '1555016764',
+        interviewDate: '1555016764',
+        interviewNotes: 'down',
+        attempts: 1
       }
-    ]
+    ],
+    methods: {
+      convertTimestamp : function(){
+
+      }
+    }
   })
 }
 </script>
