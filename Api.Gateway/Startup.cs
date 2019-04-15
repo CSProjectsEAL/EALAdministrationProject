@@ -21,12 +21,14 @@ namespace Api.Gateway
 
         }
 
-        private string ConnectionString
+        private static string ConnectionString
         {
             get
             {
                 switch (Environment.MachineName)
                 {
+                    case "ANDRE-PC":
+                        return "WolfStatic";
                     default:
                         return "Default";
                 }
