@@ -25,10 +25,14 @@ namespace Repository.EntityFramework.Config
 
             // Defining whether or not a property is required 
             // Takes in a false in the 'IsRequred' if one wish to make it not required
-            // Properteis that are nullable default to be not required -->
-            builder.Property(x => x.Interviewer).IsRequired();
-            builder.Property(x => x.Applicant).IsRequired();
-            builder.Property(x => x.Appointment).IsRequired();
+            // Properties that are nullable default to be not required -->
+
+            builder.HasOne(x => (Applicant)x.Applicant).WithOne().HasForeignKey<Interview>(x => x.FK_Applicant).IsRequired();
+
+            builder.HasOne(x => (Interviewer) x.Interviewer).WithMany(x => (ICollection<Interview>) x.Interviews)
+                .HasForeignKey(x => x.FK_Interviewer).IsRequired();
+
+            builder.HasOne(x => (Appointment) x.Appointment).WithOne().HasForeignKey<Interview>(x => x.FK_Appointment).IsRequired();
         }
     }
 }

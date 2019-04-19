@@ -22,6 +22,10 @@ namespace Repository.EntityFramework.Config
 
             // Defining Version as RowVersion -->
             builder.Property(x => x.Version).IsRowVersion();
+
+            builder.HasMany(x => (ICollection<Applicant>) x.ApplicantsToInterview).WithOne();
+
+            builder.HasMany(x => (ICollection<AvailableTime>) x.AvailableTimes).WithOne();
         }
     }
 }

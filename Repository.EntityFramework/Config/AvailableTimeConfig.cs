@@ -25,8 +25,9 @@ namespace Repository.EntityFramework.Config
 
             // Defining whether or not a property is required 
             // Takes in a false in the 'IsRequred' if one wish to make it not required
-            // Properteis that are nullable default to be not required -->
-            builder.Property(x => x.Appointments).IsRequired();
+            // Properties that are nullable default to be not required -->
+
+            builder.HasMany(x => (ICollection<Appointment>) x.Appointments).WithOne().IsRequired();
         }
     }
 }
