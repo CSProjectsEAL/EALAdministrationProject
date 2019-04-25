@@ -16,6 +16,10 @@
           title="Assigned applicants"
         >
         <v-flex md12>
+           <v-switch style="margin:1px;"
+                  v-model="showProcessed"
+                  :label="`Show processed applicants: ${showProcessed.toString()}`"
+                ></v-switch>
             <v-text-field
               v-model="search"
               append-icon="mdi-magnify"
@@ -24,12 +28,12 @@
               hide-details
             ></v-text-field>
         </v-flex>
-          <v-data-table
-            :headers="headers"
-            :items="items"
-            :pagination.sync="pagSettings"
-            :search="search"
-          >
+        <v-data-table
+          :headers="headers"
+          :items="items"
+          :pagination.sync="pagSettings"
+          :search="search"
+        >
             <template
               slot="headerCell"
               slot-scope="{ header }"
@@ -64,6 +68,8 @@
 <script>
 export default {
   data: () => ({
+    showProcessed: false
+    ,
     pagSettings:[
       {
          descending: false,
