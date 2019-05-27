@@ -12,10 +12,6 @@
 - Install Vue prototyping 
 
 ## Dependencies & Packages
-- SQL Server needs to be running to run production in production environment mode
-https://cli.vuejs.org/guide/plugins-and-presets.html#allowing-plugin-prompts
-## How to start developing
-1. Clone repository <br>
 `git clone https://github.com/CSProjectsEAL/EALAdministrationsProject.git`
 1. Checkout and track WebApp branch <br>
 `git checkout --track WebApp`
@@ -24,7 +20,7 @@ https://cli.vuejs.org/guide/plugins-and-presets.html#allowing-plugin-prompts
 1. Go to the following address in your browser <br>
 `http://localhost:5001`
 
-If the application doesn't load try restarting docker and try again. Still not showing? Submit an issue ⬆️👍🏻
+If the application doesn't load submit an issue. 😅👍🏻
 
 ## Contributors Thanks
 This project was developed by Pba. students at EAL Software Development course, related to system integration and project management. And is grounded in a real world problem and organisation.
