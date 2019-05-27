@@ -12,6 +12,7 @@
     "chartist": "0.11.0",
     "node-sass": "^4.9.3",
     "sass-loader": "^7.1.0",
+    "v-calendar": "^1.0.0-beta.6",
     "vue": "^2.5.17",
     "vue-chartist": "^2.1.2",
     "vue-country-flag": "^1.1.0",
