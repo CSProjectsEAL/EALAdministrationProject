@@ -31,6 +31,8 @@ namespace Api.Gateway
                         return "WolfStatic";
                     case "LAPTOP-9OO230TR":
                         return "WolfLaptop";
+                    case "MSI":
+                        return "AlexanderLaptop";
                     default:
                         return "Default";
                 }
