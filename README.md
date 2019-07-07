@@ -4,7 +4,7 @@
 <img style="margin-right: 200px;float:right;" src="https://octodex.github.com/images/dinotocat.pngf" width="130" align="right">
 
 ## Features
-- None yet! :@)
+- 
 
 ## Developer requirements
 - Node installed https://nodejs.org/en/download/
@@ -13,14 +13,13 @@
 
 ## Dependencies & Packages
 `git clone https://github.com/CSProjectsEAL/EALAdministrationsProject.git`
-1. Checkout and track WebApp branch <br>
-`git checkout --track WebApp`
+1. Checkout and track the main branch <br>
+`git checkout --track master`
 1. Run the following command <br>
 ``
-1. Go to the following address in your browser <br>
-`http://localhost:5001`
 
-If the application doesn't load submit an issue. 😅👍🏻
+#### VUE Project
+1. Used Vue to create a single-page application that serve as frontend for employees. Go to the folder webapp to read more specifics.
 
 ## Contributors Thanks
 This project was developed by Pba. students at EAL Software Development course, related to system integration and project management. And is grounded in a real world problem and organisation.
