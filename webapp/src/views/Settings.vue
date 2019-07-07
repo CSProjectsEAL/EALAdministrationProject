@@ -12,8 +12,7 @@
       >
         <material-card
           color="green"
-          title="Edit Profile"
-          text="Complete your profile"
+          title="Create applicant in system"
         >
           <v-form>
             <v-container py-0>
@@ -23,7 +22,7 @@
                   md4
                 >
                   <v-text-field
-                    label="Company (disabled)"
+                    label="First Name"
                     disabled/>
                 </v-flex>
                 <v-flex
@@ -32,7 +31,7 @@
                 >
                   <v-text-field
                     class="purple-input"
-                    label="User Name"
+                    label="Last Name"
                   />
                 </v-flex>
                 <v-flex
@@ -40,71 +39,26 @@
                   md4
                 >
                   <v-text-field
-                    label="Email Address"
-                    class="purple-input"/>
-                </v-flex>
-                <v-flex
-                  xs12
-                  md6
-                >
-                  <v-text-field
-                    label="First Name"
-                    class="purple-input"/>
-                </v-flex>
-                <v-flex
-                  xs12
-                  md6
-                >
-                  <v-text-field
-                    label="Last Name"
-                    class="purple-input"/>
-                </v-flex>
-                <v-flex
-                  xs12
-                  md12
-                >
-                  <v-text-field
-                    label="Adress"
-                    class="purple-input"/>
-                </v-flex>
-                <v-flex
-                  xs12
-                  md4>
-                  <v-text-field
-                    label="City"
-                    class="purple-input"/>
-                </v-flex>
-                <v-flex
-                  xs12
-                  md4>
-                  <v-text-field
                     label="Country"
                     class="purple-input"/>
                 </v-flex>
                 <v-flex
                   xs12
-                  md4>
+                  md6
+                >
                   <v-text-field
-                    class="purple-input"
-                    label="Postal Code"
-                    type="number"/>
-                </v-flex>
-                <v-flex xs12>
-                  <v-textarea
-                    class="purple-input"
-                    label="About Me"
-                    value="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                  />
+                    label="Applied date"
+                    class="purple-input"/>
                 </v-flex>
                 <v-flex
                   xs12
-                  text-xs-right
+                  md6
                 >
                   <v-btn
                     class="mx-0 font-weight-light"
                     color="success"
                   >
-                    Update Profile
+                    Update Applicant
                   </v-btn>
                 </v-flex>
               </v-layout>

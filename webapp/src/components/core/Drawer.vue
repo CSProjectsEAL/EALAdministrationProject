@@ -97,7 +97,7 @@ export default {
       {
         to: '/settings',
         icon: 'mdi-settings',
-        text: 'Settings'
+        text: 'Create applicant'
       },
     ],
     responsive: false
