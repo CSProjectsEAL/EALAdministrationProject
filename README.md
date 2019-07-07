@@ -1,5 +1,5 @@
 <img style="margin-right: 200px;float:right;" src="https://img.shields.io/badge/development%20status-active-brightgreen.svg"><div></div>
-# EAL Appointment Scheduling - Web App
+# EAL Appointment Scheduling
 
 <img style="margin-right: 200px;float:right;" src="https://octodex.github.com/images/dinotocat.pngf" width="130" align="right">
 
