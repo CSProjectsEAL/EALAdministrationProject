@@ -16,9 +16,8 @@
 1. Checkout and track the main branch <br>
 `git checkout --track master`
 1. Run the following command <br>
-``
 
-#### VUE Project
+## VUE Project
 1. Used Vue to create a single-page application that serve as frontend for employees. Go to the folder webapp to read more specifics.
 
 ## Contributors Thanks
