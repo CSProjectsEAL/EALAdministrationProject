@@ -6,10 +6,8 @@
 ## Features
 - 
 
-## Developer requirements
-- Node installed https://nodejs.org/en/download/
-- Vue cli https://cli.vuejs.org/guide/installation.html
-- Install Vue prototyping 
+## Technologies
+
 
 ## Dependencies & Packages
 `git clone https://github.com/CSProjectsEAL/EALAdministrationsProject.git`
